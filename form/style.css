@@ -1,0 +1,34 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 2px dashed black;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background: black;
+  color: white;
+  transition: all 0.7s;
+}
+
+button:hover {
+  cursor: pointer;
+  width: 230px;
+  height: 40px;
+}

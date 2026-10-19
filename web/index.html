@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+        }
+
+        a{
+            text-decoration: none ;
+            color: white;
+            font-size: 18px;
+        }
+
+        body{
+            min-height: 100vh;
+            
+        }
+
+        #hero{
+            width: 100%;
+            height: 100vh;
+            background-image: url(./../imagens/3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+        ul{
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+        
+        #logo{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #content{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div span{
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+          div h1{
+            color: #fff;
+            font-weight: bold;
+            font-size: 86px;
+        }
+
+        #hero button{
+            color: white;
+            font-size: 18px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            height: 40px;
+            width: 200px;
+            border-radius: 40px;
+            transition: all 0.7s;
+        }
+
+        button:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        #content1{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        #content1 img{
+            width:500px;
+            height: 300px   ;
+        }
+
+        #content1 p{
+            width: 550px;
+        }
+
+        #content1 > span{
+            text-transform: uppercase;
+            font-weight: 800;
+            color: #8e8e8e;
+        }
+
+        #content1 h2{
+            font-size: 42px;
+            text-transform: capitalize;
+        }
+         #content1 h2 span{
+            border-bottom: 5px solid #000;
+        }
+
+        .estilo-button
+        {
+            padding: 5px;
+            width: 150px;
+            border: 2px solid #000;
+            border-radius: 40px;
+            background-color: transparent;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+<body>
+        <div id="hero">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li id="logo"><a href="">Albaino</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="content">
+                <span>PUT YOUR SUBTITLE HERE</span>
+                <h1>Website Layout</h1>
+                <button>MORE INFO ></button>
+            </div>
+        </div>
+
+        <section id="content1">
+            <img src="./../imagens/4.jpg" alt="">
+            <span>Category name 1</span>
+            <h2>Put your <span>title #1</span></h2>
+            <h3>put your subtitle here</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, veritatis dolore mollitia ipsum fugit fuga molestiae hic quas nihil eum unde obcaecati pariatur? Rerum quidem laudantium ratione adipisci debitis sapiente.</p>
+            <button class="estilo-button">More info ></button>
+        </section>
+       
+</body>
+</html>

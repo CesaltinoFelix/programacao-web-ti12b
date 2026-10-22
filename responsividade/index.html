@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposividade</title>
+    <style>
+        *{
+            padding: 0px;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu{
+            height: 50px;
+            background: red;
+            width: 100%;
+            display: flex;
+            gap: 10;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row ;
+            gap: 10px;
+        }
+
+        .menu-mobile{
+            background-color: yellow;
+        }
+
+        @media screen and (min-width: 721px){
+            .menu-mobile{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 720px)
+        {
+            body{
+                justify-content: end;
+            }
+            .menu-desktop{
+                display: none;
+            }
+            ul{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="menu menu-desktop">
+        <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="menu menu-mobile">
+        <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
